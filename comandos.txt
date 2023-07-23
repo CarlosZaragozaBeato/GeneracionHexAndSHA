@@ -1,0 +1,13 @@
+cargar -> g++ -o hex1 hex1.cpp -lssl -lcrypto
+	/hex
+
+
+mover -> g++ -o mover mover.cpp
+	/mover
+
+
+contar -> find . -type f | wc -l
+
+
+limpiar papelera -> rm -rf ~/.local/share/Trash/*
+
