@@ -72,14 +72,14 @@ func decimalToHex(decimalStr string) (string, error) {
 	return fmt.Sprintf("%X", decimal), nil
 }
 
-const NEXT_SEED = "befbecf188476ada497ea3a2122350f8282a7b22a8e0de96274e7f96e04948ce"
+const NEXT_SEED = "2b8e9f51b7491aae5f189449be957b40b1f25ebc283c3b95352491cd260e3c78"
 const PATH = "C:/Users/carlo/Desktop/GeneracionHexAndSHA/inicio.json"
 
 const INCREMENT = 100000000
 
 func main() {
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		bytesJSON, _ := os.ReadFile(PATH)
 		var config Config
 		json.Unmarshal(bytesJSON, &config)
